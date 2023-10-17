@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+  <title>PetFax add a pet for faxing</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Submit Fax</h1>
+    <div class="callout">
+      If you have an animal you want to fax put its information here
+    </div>
+    <div class="facts-container">
+      <form>
+        <label for="submittet">
+          <h2>Name:</h2>
+        </label>
+        <input type="text" name="submitter">
+        <br>
+        <label for="fact">
+          <h2>Fact</h2>
+        </label>
+        <textarea name="fact" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="text" name="photo">
+        <br>
+        <input type="submit" value="submit the Fact">
+      </form>
+    </div>
+    <a href="/pets">&lt;&lt; Go Back</a>
+  </div>
+</body>
+</html>
